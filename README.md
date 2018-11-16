@@ -6,10 +6,6 @@ Sandbox-Manager: https://banking-sandbox.starfinanz.de/sandboxmanager/#/
 
 Your starting point is the Red Hat Solution Explorer available at: https://tutorial-web-app-webapp.symbioticon.opentry.me
 
-As a cluster admin, you can log in using: admin@example.com / M9QlGhRuYRpy
-
-We have also created 50 evaluation users to allow multiple people to run through the walkthroughs. These evaluation accounts take the form of evalsNN@example.com where NN represents a number between 01 and 50. The password for each of these evals accounts is Password1.
-
 You can also access the Master OpenShift console at https://symbioticon.opentry.me 
 
 ## Installing Mobile Core
@@ -17,7 +13,7 @@ You can also access the Master OpenShift console at https://symbioticon.opentry.
 First of all let's log in Openshift, then create a new project `mobile` where we'll install [Aerogear Mobile Services](https://aerogear.org/)
 
 ```shell
-oc login https://symbioticon.opentry.me -u admin@example.com -p M9QlGhRuYRpy
+oc login https://symbioticon.opentry.me -u admin@example.com -p yourpass
 oc new-project mobile-core
 ```
 
@@ -30,13 +26,13 @@ Now let's clone [`mobile-core`](https://github.com/aerogear/mobile-core.git) and
 oc project mobile-core
 git clone https://github.com/aerogear/mobile-core.git
 cd mobile-core
-ansible-playbook installer/aerogear-catalog-install.yml -e "u=admin@example.com p=M9QlGhRuYRpy ansible_service_broker_namespace=openshift-ansible-service-broker"
+ansible-playbook installer/aerogear-catalog-install.yml -e "u=admin p=yourpass ansible_service_broker_namespace=openshift-ansible-service-broker"
 ```
 
 **RHPDS**
 
 ```
-ansible-playbook installer/aerogear-catalog-install.yml -e "u=opentlc-mgr -p=r3dh4t1! ansible_service_broker_namespace=openshift-ansible-service-broker"
+ansible-playbook installer/aerogear-catalog-install.yml -e "u=admin -p=yourpass ansible_service_broker_namespace=openshift-ansible-service-broker"
 ```
 
 ## Deploy UPS
