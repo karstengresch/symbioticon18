@@ -1,12 +1,17 @@
-Cookbook: https://banking-sandbox.starfinanz.de/ahoi/docs/cookbook/index.html
-API-Explorer: https://banking-sandbox.starfinanz.de/ahoi/docs/api/swagger-ui/index.html#!/resource/Access
-Sandbox-Manager: https://banking-sandbox.starfinanz.de/sandboxmanager/#/
 
 ## URLs
 
-Your starting point is the Red Hat Solution Explorer available at: https://tutorial-web-app-webapp.symbioticon.opentry.me
+### Platform
 
-You can also access the Master OpenShift console at https://symbioticon.opentry.me 
+OpenShift acces at https://symbioticon.opentry.me
+
+### AHOI
+
+Cookbook: https://banking-sandbox.starfinanz.de/ahoi/docs/cookbook/index.html
+
+API-Explorer: https://banking-sandbox.starfinanz.de/ahoi/docs/api/swagger-ui/index.html#!/resource/Access
+
+Sandbox-Manager: https://banking-sandbox.starfinanz.de/sandboxmanager/#/
 
 ## Installing Mobile Core
 
