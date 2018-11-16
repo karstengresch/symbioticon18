@@ -13,7 +13,7 @@ You can also access the Master OpenShift console at https://symbioticon.opentry.
 First of all let's log in Openshift, then create a new project `mobile` where we'll install [Aerogear Mobile Services](https://aerogear.org/)
 
 ```shell
-oc login https://symbioticon.opentry.me -u admin@example.com -p yourpass
+oc login https://symbioticon.opentry.me -u admin -p yourpass
 oc new-project mobile-core
 ```
 
